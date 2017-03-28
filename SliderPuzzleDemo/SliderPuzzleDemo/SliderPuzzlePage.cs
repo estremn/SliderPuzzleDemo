@@ -127,7 +127,7 @@ namespace SliderPuzzleDemo
             _gridItems[item2.Position] = item2;
         }
 
-        internal class GridItem : Label
+        internal class GridItem : Image
         {
             public GridPosition Position
             {
@@ -137,10 +137,10 @@ namespace SliderPuzzleDemo
             public GridItem(GridPosition position, String text)
             {
                 Position = position;
-                Text = text;
-                TextColor = Color.White;
-                HorizontalOptions = LayoutOptions.Center;
-                VerticalOptions = LayoutOptions.Center;
+                string path = "SliderPuzzleDemo." + text + ".png";
+                Source = ImageSource.FromResource(path);
+                HorizontalOptions = LayoutOptions.CenterAndExpand;
+                VerticalOptions = LayoutOptions.CenterAndExpand;
             }
         }
 
