@@ -58,7 +58,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="1.png" />
     <EmbeddedResource Include="2.png" />
     <EmbeddedResource Include="11.png" />
     <EmbeddedResource Include="12.png" />
